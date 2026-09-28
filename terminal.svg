@@ -49,7 +49,7 @@
 <text x="568.8" y="563.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#5bbcff" font-weight="bold">Repos</tspan><tspan fill="#c5d3e0">: 2</tspan></text>
 <text x="568.8" y="586.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#5bbcff" font-weight="bold">Stars</tspan><tspan fill="#c5d3e0">: 0</tspan></text>
 <text x="568.8" y="609.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#5bbcff" font-weight="bold">Followers</tspan><tspan fill="#c5d3e0">: 1</tspan></text>
-<text x="568.8" y="632.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#5bbcff" font-weight="bold">Commits</tspan><tspan fill="#c5d3e0">: 18</tspan></text>
+<text x="568.8" y="632.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#5bbcff" font-weight="bold">Commits</tspan><tspan fill="#c5d3e0">: 20</tspan></text>
 <text x="36" y="682.0" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','DejaVu Sans Mono',Consolas,Menlo,monospace" font-size="17"><tspan fill="#c3e040" font-weight="bold">albqrmario@GitHub</tspan><tspan fill="#c5d3e0">:</tspan><tspan fill="#5bbcff" font-weight="bold">~/dev/profile</tspan><tspan fill="#c5d3e0">$</tspan></text>
 <rect x="373.7" y="665.0" width="9.2" height="19.5" fill="#f0b840"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/></rect>
 </svg>
