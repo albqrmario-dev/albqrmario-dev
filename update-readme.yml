@@ -1,0 +1,44 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # todo dia às 06:00 UTC (~03:00 no horário de Brasília)
+  workflow_dispatch:        # permite rodar manualmente pelo botão "Run workflow"
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate SVGs
+        run: python today.py
+        env:
+          GH_USERNAME: albqrmario-dev
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add terminal.svg
+          if ! git diff --staged --quiet; then
+            git commit -m "Atualiza stats do perfil"
+            git push
+          else
+            echo "Nada mudou, pulando commit."
+          fi
